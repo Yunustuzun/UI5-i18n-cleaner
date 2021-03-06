@@ -1,0 +1,7 @@
+<mvc:View controllerName="int.ui5.template.controller.Planner" xmlns="sap.m" xmlns:grid="sap.ui.layout.cssgrid" xmlns:mvc="sap.ui.core.mvc" height="100%">
+	<Page>
+		<grid:CSSGrid id="grid1" gridTemplateColumns="1fr 1fr">
+			<Text text="Deneme"></Text>
+		</grid:CSSGrid>
+	</Page>
+</mvc:View>

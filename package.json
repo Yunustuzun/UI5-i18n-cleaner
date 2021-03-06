@@ -1,0 +1,32 @@
+{
+  "name": "ui5-npm-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "ui5 serve",
+    "deploy": "ui5 build --exclude-task escapeNonAsciiCharacters"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ui5-middleware-simpleproxy": "^0.5.1",
+    "ui5-task-nwabap-deployer": "^1.0.15"
+  },
+  "description": "",
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "ui5-middleware-livereload": "^0.4.3",
+    "ui5-middleware-servestatic": "^0.3.3",
+    "ui5-middleware-simpleproxy": "^0.5.1",
+    "ui5-task-nwabap-deployer": "^1.0.15"
+  },
+  "ui5": {
+    "dependencies": [
+      "ui5-middleware-servestatic",
+      "ui5-middleware-simpleproxy",
+      "ui5-middleware-livereload",
+      "ui5-task-nwabap-deployer"
+    ]
+  }
+}

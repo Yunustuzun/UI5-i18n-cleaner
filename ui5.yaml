@@ -1,0 +1,42 @@
+specVersion: '2.0'
+metadata:
+  name: UI5_TEMPLATE
+type: application
+server:
+  customMiddleware:
+  - name: ui5-middleware-simpleproxy
+    mountPath: /sap/opu/odata/sap/ZINT_RT_SMART_TABLES_SRV/
+    afterMiddleware: compression
+    configuration:
+      baseUri: http://smartcappd00.sap.tt-tim.tr:8000/sap/opu/odata/sap/ZINT_RT_SMART_TABLES_SRV/
+      useStrictSSL: false
+  - name: ui5-middleware-servestatic
+    afterMiddleware: compression
+    mountPath: /resources
+    configuration:
+      rootPath: "C:/SapWebIde/eclipse/plugins/com.sap.webide.orionplugin_1.53.5/ui5/1.81.1/resources"
+  - name: ui5-middleware-livereload
+    afterMiddleware: compression
+    configuration:
+      debug: true
+      extraExts: "xml,json,properties"
+      port: 35729
+      watchPath: "webapp"
+builder:
+  customTasks:
+  - name: ui5-task-nwabap-deployer
+    afterTask: generateVersionInfo
+    configuration: 
+      resources:
+        pattern: "**/*.*"
+      connection:
+        server: http://smartcappd00.sap.tt-tim.tr:8000/
+        client: 100
+        useStrictSSL: false
+      ui5:
+        language: EN
+        package:  ZINT_RT
+        bspContainer: ZROUTE_MANAGE
+        bspContainerText: Route Management
+        calculateApplicationIndex: true
+        transportNo: GGDK901675        

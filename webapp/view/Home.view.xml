@@ -1,0 +1,44 @@
+<mvc:View controllerName="int.ui5.template.controller.Home" xmlns="sap.m" xmlns:f="sap.f" xmlns:mvc="sap.ui.core.mvc" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+
+	<GenericTile app:target="planner" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="{i18n>planner}" press="pressTile">
+		<layoutData>
+			<f:GridContainerItemLayoutData minRows="2" columns="2" />
+		</layoutData>
+
+		<TileContent footer="">
+			<NumericContent value="" icon="sap-icon://home-share" withMargin="false" valueColor="Error" nullifyValue="false" />
+		</TileContent>
+	</GenericTile>
+
+	<GenericTile app:target="tours" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="{i18n>tours}" press="pressTile">
+		<layoutData>
+			<f:GridContainerItemLayoutData minRows="2" columns="2" />
+		</layoutData>
+
+		<TileContent footer="">
+			<NumericContent value="" icon="sap-icon://map-2" withMargin="false" valueColor="Error" nullifyValue="false" />
+		</TileContent>
+	</GenericTile>
+
+	<GenericTile app:target="locations" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="{i18n>planner}" press="pressTile">
+		<layoutData>
+			<f:GridContainerItemLayoutData minRows="2" columns="2" />
+		</layoutData>
+
+		<TileContent footer="">
+			<NumericContent value="" icon="sap-icon://geographic-bubble-chart" withMargin="false" valueColor="Error" nullifyValue="false" />
+		</TileContent>
+	</GenericTile>
+
+	<GenericTile app:target="fleet" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="{i18n>fleet}" press="pressTile">
+		<layoutData>
+			<f:GridContainerItemLayoutData minRows="2" columns="2" />
+		</layoutData>
+
+		<TileContent footer="">
+			<NumericContent value="" icon="sap-icon://overview-chart" withMargin="false" valueColor="Error" nullifyValue="false" />
+		</TileContent>
+	</GenericTile>
+
+
+</mvc:View>
