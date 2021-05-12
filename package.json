@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ui5 serve",
-    "deploy": "ui5 build --exclude-task escapeNonAsciiCharacters"
+    "build": "ui5 build --exclude-task escapeNonAsciiCharacters"
   },
   "keywords": [],
   "author": "",

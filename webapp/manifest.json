@@ -93,11 +93,6 @@
           "pattern": "",
           "name": "home",
           "target": "home"
-        },
-        {
-          "pattern": "planner",
-          "name": "planner",
-          "target": "planner"
         }
       ],
       "targets": {
@@ -105,16 +100,8 @@
           "viewName": "Home",
           "viewId": "home",
           "viewLevel": 1
-        },
-        "planner": {
-          "viewName": "Planner",
-          "viewId": "planner",
-          "viewLevel": 2
-        },
-        "notFound": {
-          "viewName": "NotFound",
-          "viewId": "notFound"
         }
+
       }
     }
   }
