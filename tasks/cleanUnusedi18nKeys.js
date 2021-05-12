@@ -17,72 +17,6 @@ module.exports = async function ({ workspace, dependencies, taskUtil, options })
     // [...]
 
 
-
-
-    // for (let k = 0; k < progNames.length; k++) {
-    //     const progName = progNames[k];
-
-    //     var realPath = "C:\\SapWebIde\\eclipse\\serverworkspace\\te\\telekom\\OrionContent\\" + progName + "\\i18n\\i18n.properties";
-    //     var newPath = "C:\\SapWebIde\\eclipse\\serverworkspace\\te\\telekom\\OrionContent\\" + progName + "\\i18n\\i18n_newx.properties";
-
-
-    //     try {
-    //         var data = "";
-    //         data = fs.readFileSync(realPath, "utf-8");
-
-    //     } catch (error) {
-    //         console.log(error);
-    //         continue;
-    //     }
-    //     var foundedString = "";
-
-
-    //     if (data === "") {
-    //         continue;
-    //     }
-    //     var i18nLines = data.split(/\r?\n/);
-
-    //     for (let i = 0; i < i18nLines.length; i++) {
-    //         const i18nLine = i18nLines[i];
-
-    //         var found = false;
-
-    //         var elArray = i18nLine.split("=");
-    //         if (elArray.length > 1) {
-
-    //             var prop = elArray[0];
-
-    //             for (let j = 0; j < fileArray.length; j++) {
-    //                 var fileElement = fileArray[j];
-
-    //                 fileElement = fileElement.replace("@@@@@", progName);
-
-    //                 try {
-    //                     data = fs.readFileSync(fileElement, "utf-8");
-
-    //                     var searchReturn = data.search(prop)
-    //                     if (searchReturn === -1) {
-
-    //                         console.log("");
-    //                     }
-    //                     else {
-    //                         foundedString += i18nLine + "\n";
-    //                         break;
-    //                     }
-    //                 } catch (error) {
-    //                     console.log(error)
-    //                 }
-
-    //             }
-
-    //         }
-    //     }
-
-    //     fs.writeFileSync(realPath, foundedString, 'utf8');
-
-    //     console.log(realPath, "updated");
-    // }
-
     const textResources = await workspace.byGlob("**/*{view.xml,fragment.xml,controller.js,manifest.json}");
     const i18nFiles = await workspace.byGlob("**/*.properties");
     var lines = [], line = {}, i18nString = "";
@@ -136,16 +70,7 @@ module.exports = async function ({ workspace, dependencies, taskUtil, options })
 
         await workspace.write(i18nFile, { readOnly: true }).then(() => console.log('DONE'));
 
-        // console.log(i18nFile + " added");
-        // await workspace.write(i18nFile);
-        // });
     }
-
-
-        // console.log();
-        // console.log(resource + " fixed");
-        // return workspace.write(resource);
-        // }
     ));
 
 };

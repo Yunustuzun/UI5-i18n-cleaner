@@ -19,7 +19,7 @@ server:
 builder:
   customTasks:
     - name: cleanUnusedi18nKeys
-      beforeTask: generateComponentPreload
+      beforeTask: replaceCopyright
 
 ---
 # Task extension as part of your project
