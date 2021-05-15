@@ -1,6 +1,6 @@
 specVersion: '2.1'
 metadata:
-  name: UI5_TEMPLATE
+  name: INT_UI5_I18NCLEANER
 type: application
 server:
   customMiddleware:
@@ -20,7 +20,6 @@ builder:
   customTasks:
     - name: cleanUnusedi18nKeys
       beforeTask: replaceCopyright
-
 ---
 # Task extension as part of your project
 specVersion: "2.1"

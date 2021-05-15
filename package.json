@@ -1,15 +1,16 @@
 {
-  "name": "ui5-npm-template",
+  "name": "int.ui5.i18ncleaner",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "ui5 serve",
-    "build": "ui5 build --verbose --exclude-task escapeNonAsciiCharacters"
+    "build": "ui5 build  --exclude-task escapeNonAsciiCharacters"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ui5/fs": "^2.0.6",
     "ui5-middleware-simpleproxy": "^0.5.1",
     "ui5-task-nwabap-deployer": "^1.0.15"
   },

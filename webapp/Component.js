@@ -6,7 +6,7 @@ sap.ui.define([
 ], function (UIComponent, Device, models, ListSelector) {
 	"use strict";
 
-	return UIComponent.extend("int.ui5.template.Component", {
+	return UIComponent.extend("int.ui5.i18ncleaner.Component", {
 
 		metadata: {
 			manifest: "json"

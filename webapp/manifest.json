@@ -1,7 +1,7 @@
 {
   "_version": "1.12.0",
   "sap.app": {
-    "id": "int.ui5.template",
+    "id": "int.ui5.i18ncleaner",
     "type": "application",
     "resources": "resources.json",
     "i18n": "i18n/i18n.properties",
@@ -46,7 +46,7 @@
   },
   "sap.ui5": {
     "rootView": {
-      "viewName": "int.ui5.template.view.App",
+      "viewName": "int.ui5.i18ncleaner.view.App",
       "type": "XML",
       "async": true,
       "id": "app"
@@ -67,7 +67,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "int.ui5.template.i18n.i18n"
+          "bundleName": "int.ui5.i18ncleaner.i18n.i18n"
         }
       },
       "": {
@@ -79,7 +79,7 @@
       "config": {
         "routerClass": "sap.f.routing.Router",
         "viewType": "XML",
-        "viewPath": "int.ui5.template.view",
+        "viewPath": "int.ui5.i18ncleaner.view",
         "controlId": "app",
         "controlAggregation": "pages",
         "transition": "slide",

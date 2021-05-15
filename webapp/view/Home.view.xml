@@ -1,4 +1,4 @@
-<mvc:View controllerName="int.ui5.template.controller.Home" xmlns="sap.m" xmlns:f="sap.f" xmlns:mvc="sap.ui.core.mvc" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+<mvc:View controllerName="int.ui5.i18ncleaner.controller.Home" xmlns="sap.m" xmlns:f="sap.f" xmlns:mvc="sap.ui.core.mvc" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
 
 	<GenericTile app:target="planner" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="{i18n>planner}" press="pressTile">
 		<layoutData>
